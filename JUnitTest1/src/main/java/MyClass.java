@@ -23,4 +23,17 @@ public class MyClass {
 
         return false;
     }
+
+    public int factorial(int x) {
+        int result = 1;
+        if (x >= 0) {
+            while (x != 0) {
+                result = result * x;
+                x--;
+            }
+        } else {
+            throw new IllegalArgumentException("X should be greater or equal than 0");
+        }
+        return result;
+    }
 }
